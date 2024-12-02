@@ -22,14 +22,13 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(10, auto); 
-    gap: 10px; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .nav-item {
-    display: flex;
+    margin: 10px;
 }
 
 .nav-link {
@@ -40,7 +39,6 @@ body {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    text-align: center;
 }
 
 .nav-link:hover {
@@ -49,9 +47,6 @@ body {
 }
 
 @media (max-width: 600px) {
-    .nav-list {
-        grid-template-columns: repeat(2, auto); 
-    }
     .nav-link {
         padding: 10px;
     }
