@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #5f9ea0;
     margin: 0;
     padding: 0;
 }
@@ -44,6 +44,12 @@ body {
 .nav-link:hover {
     background-color: #4682b4;
     color: white;
+}
+
+.enunciado{
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 600px) {
