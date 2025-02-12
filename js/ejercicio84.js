@@ -1,10 +1,18 @@
-let num =prompt("ingresar numero de filas")
-function generarPiramide(filas) {
-    for (let i = 1; i <= filas; i++) {
-        const espacios = " ".repeat(filas - i);
-        const asteriscos = "*".repeat(2 * i - 1);
-        alert(espacios + asteriscos + espacios);
+let valor = parseInt(prompt("Ingrese la altura para la piramide"));
+
+const piramide = (valor) => {
+  console.log(typeof valor);
+  for (let i = 1; i < valor; i++) {
+    let asteriscos = "";
+    for (let a = valor; a > 0; a--) {
+      asteriscos += "*";
     }
-}
-let resultado = generarPiramide(num);
-alert (`el total de filas es ${num}`);
+    for (let z = 1; z < i + 2; z++) {
+      asteriscos += "*";
+    }
+    alert(asteriscos);
+    valor -= 1;
+  }
+};
+
+piramide(valor);
